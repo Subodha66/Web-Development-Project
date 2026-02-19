@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="orderfrom.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="grid-container">
+
+<div>
+<center>
+<ul>
+<a href="home.html" style="text-decoration: none;">
+  <h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1>
+ </a> <hr>
+  <a href="https://www.google.com/maps/place/570+Hudson+St,+New+York,+NY+10014,+USA/@40.7356767,-74.0057727,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25994da0c6003:0x86aea3f0bbf9f66a!8m2!3d40.7356767!4d-74.0057727!16s%2Fg%2F11c2brzvj5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" 
+   style="text-decoration: none;">
+  <address>
+    <br>570 Hudson St,<br>
+    New York, NY 10014
+  </address>
+  </a><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a class ="active" href="order.html">ODER NOW!</a></li>
+  <li><a href="Menu Page.html">MENUS</a></li>
+  <li><a href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+    <div class="container">
+        <h1>Order Form</h1>
+        <form action="orderfrom.php" method="post">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <th>Tel No</th>
+                    <td><input type="tel" name="telNo" placeholder="Enter your phone number" required></td>
+                </tr>
+                <tr>
+                    <th>Method</th>
+                    <td>
+                        <label><input type="radio" name="method" value="takeAway" required> Take Away</label><br>
+                        <label><input type="radio" name="method" value="delivery" required> Delivery</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Select Items</th>
+                </tr>
+
+                <!-- Beverage Section -->
+                <tr>
+                    <th rowspan="11" class="bav">Beverage</th>
+                    <td class="bav"><label><input type="checkbox" name="beverage[]" value="coffee"> Coffee</label><input type="number" name="coffeeQty" placeholder="Qty" min="1"></td>
+                </tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="icedLatte"> Iced Latte</label><input type="number" name="icedLatteQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="freshLemonade"> Fresh Lemonade</label><input type="number" name="freshLemonadeQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="strawberrySmoothie"> Strawberry Smoothie</label><input type="number" name="strawberrySmoothieQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="mangoMojito"> Mango Mojito</label><input type="number" name="mangoMojitoQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="espressoShot"> Espresso Shot</label><input type="number" name="espressoShotQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="greenTea"> Green Tea</label><input type="number" name="greenTeaQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="berryBlastMocktail"> Berry Blast Mocktail</label><input type="number" name="berryBlastMocktailQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="hotChocolate"> Hot Chocolate</label><input type="number" name="hotChocolateQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="sparklingOrangeJuice"> Sparkling Orange Juice</label><input type="number" name="sparklingOrangeJuiceQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="beverage[]" value="cucumberMintCooler"> Cucumber Mint Cooler</label><input type="number" name="cucumberMintCoolerQty" placeholder="Qty" min="1"></td></tr>
+
+                <!-- Side Dishes Section -->
+                <tr>
+                    <th rowspan="10" class="sl">Side Dishes</th>
+                    <td class="sl"><label><input type="checkbox" name="sideDishes[]" value="garlicBread"> Garlic Bread</label><input type="number" name="garlicBreadQty" placeholder="Qty" min="1"></td>
+                </tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="frenchFries"> French Fries</label><input type="number" name="frenchFriesQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="caesarSalad"> Caesar Salad</label><input type="number" name="caesarSaladQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="mashedPotatoes"> Mashed Potatoes</label><input type="number" name="mashedPotatoesQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="coleslaw"> Coleslaw</label><input type="number" name="coleslawQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="steamedVegetables"> Steamed Vegetables</label><input type="number" name="steamedVegetablesQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="onionRings"> Onion Rings</label><input type="number" name="onionRingsQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="cheesyPotatoWedges"> Cheesy Potato Wedges</label><input type="number" name="cheesyPotatoWedgesQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="bruschetta"> Bruschetta</label><input type="number" name="bruschettaQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="sideDishes[]" value="hotButterCuttlefish"> Hot Butter Cuttlefish</label><input type="number" name="hotButterCuttlefishQty" placeholder="Qty" min="1"></td></tr>
+
+                <!-- Soups Section -->
+                <tr>
+                    <th rowspan="10" class="bav">Soups</th>
+                    <td class="bav"><label><input type="checkbox" name="soup[]" value="tomatoBasilSoup"> Tomato Basil Soup</label><input type="number" name="tomatoBasilSoupQty" placeholder="Qty" min="1"></td>
+                </tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="chickenNoodleSoup"> Chicken Noodle Soup</label><input type="number" name="chickenNoodleSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="minestroneSoup"> Minestrone Soup</label><input type="number" name="minestroneSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="creamOfMushroomSoup"> Cream of Mushroom Soup</label><input type="number" name="creamOfMushroomSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="frenchOnionSoup"> French Onion Soup</label><input type="number" name="frenchOnionSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="pumpkinSoup"> Pumpkin Soup</label><input type="number" name="pumpkinSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="seafoodChowder"> Seafood Chowder</label><input type="number" name="seafoodChowderQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="vegetableSoup"> Vegetable Soup</label><input type="number" name="vegetableSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="leekAndPotatoSoup"> Leek and Potato Soup</label><input type="number" name="leekAndPotatoSoupQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="bav"><label><input type="checkbox" name="soup[]" value="chickenCreamSoup"> Chicken Cream Soup</label><input type="number" name="chickenCreamSoupQty" placeholder="Qty" min="1"></td></tr>
+
+                <!-- Main Dishes Section -->
+                <tr>
+                    <th rowspan="10" class="sl">Main Dishes</th>
+                    <td class="sl"><label><input type="checkbox" name="mainDishes[]" value="chickenCurry"> Chicken Curry</label><input type="number" name="chickenCurryQty" placeholder="Qty" min="1"></td>
+                </tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="beefSteak"> Beef Steak</label><input type="number" name="beefSteakQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="pastaAlfredo"> Pasta Alfredo</label><input type="number" name="pastaAlfredoQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="grilledSalmon"> Grilled Salmon</label><input type="number" name="grilledSalmonQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="vegBiryani"> Veg Biryani</label><input type="number" name="vegBiryaniQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="pizzaMargherita"> Pizza Margherita</label><input type="number" name="pizzaMargheritaQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="fishAndChips"> Fish and Chips</label><input type="number" name="fishAndChipsQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="spaghettiCarbonara"> Spaghetti Carbonara</label><input type="number" name="spaghettiCarbonaraQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="chickenFriedRice"> Chicken Fried Rice</label><input type="number" name="chickenFriedRiceQty" placeholder="Qty" min="1"></td></tr>
+                <tr><td class="sl"><label><input type="checkbox" name="mainDishes[]" value="lambChops"> Lamb Chops</label><input type="number" name="lambChopsQty" placeholder="Qty" min="1"></td></tr>
+
+                <tr>
+                    <td colspan="2"><button type="submit"style="background-color: #4d004d;">Submit Order</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

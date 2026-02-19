@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: white;
+            color: #4d004d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-style:italic;
+            font-weight:normal;
+            font-family: Ubuntu, sans-serif;
+            font-size: 35px;
+            color:#4d004d;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: auto;  
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height:250px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .menu-item p {
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="grid-container">
+
+<div>
+<center>
+<ul>
+  <li><h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1></li>
+  <hr>
+  <li><address><br>570 Hudson St,<br>New York, NY 10014</address></li><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a href="order.html">ORDER NOW!</a></li>
+  <li><a href="Menu Page.html" class ="active" >MENUS</a></li>
+  <li><a  href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+<div>
+    <header>
+        <h1>Desserts</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="pics\D1.jpg" alt="Chocolate Pudding">
+            <div class="menu-item-content">
+                <h2>Chocolate Pudding</h2>
+                <p>A rich and creamy chocolate dessert, topped with chocolate shavings for extra indulgence.</p>
+                <p class="price">$10.50</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D2.jpg" alt="Caramel Pudding">
+            <div class="menu-item-content">
+                <h2>Caramel Pudding</h2>
+                <p>A smooth and silky pudding with a delightful caramel sauce topping.
+
+</p>
+                <p class="price">$12.25</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D3.jpg" alt="Fruit Salad">
+            <div class="menu-item-content">
+                <h2>Fruit Salad</h2>
+                <p>A refreshing mix of seasonal fruits, lightly drizzled with honey or served with a scoop of ice cream.
+
+</p>
+                <p class="price">$9.50</p>
+            </div>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="pics\D4.jpg" alt="Classic Cheesecake">
+            <div class="menu-item-content">
+                <h2>Classic Cheesecake</h2>
+                <p>A rich and creamy cheesecake on a buttery graham cracker crust, topped with fresh berries.
+
+</p>
+                <p class="price">$15.49</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D5.jpg" alt="Chocolate Lava Cake">
+            <div class="menu-item-content">
+                <h2>Chocolate Lava Cake</h2>
+                <p>Warm and gooey chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+                <p class="price">$11.23</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D6.jpg" alt="Pistachio Ice Cream">
+            <div class="menu-item-content">
+                <h2>Pistachio Ice Cream</h2>
+                <p>Creamy and nutty pistachio-flavored ice cream, garnished with crushed pistachios.</p>
+                <p class="price">$10.20</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D7.jpg" alt="Cr�me Br�l�e">
+            <div class="menu-item-content">
+                <h2>Creme Brulee</h2>
+                <p>A classic French custard dessert with a caramelized sugar crust and a creamy vanilla base.
+
+</p>
+                <p class="price">$8.78</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D8.jpg" alt="Banoffee Pie">
+            <div class="menu-item-content">
+                <h2>Banoffee Pie</h2>
+                <p>A delightful combination of bananas, toffee, and whipped cream on a biscuit base.</p>
+                <p class="price">$123.90</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D9.jpg" alt="Red Velvet Cake">
+            <div class="menu-item-content">
+                <h2>Red Velvet Cake</h2>
+                <p>A moist and velvety red cake layered with cream cheese frosting for a decadent experience.</p>
+                <p class="price">$13.67</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\D10.jpg" alt="Tiramisu">
+            <div class="menu-item-content">
+                <h2>Tiramisu</h2>
+                <p>Layers of coffee-soaked ladyfingers, mascarpone cream, and cocoa for a delightful Italian treat.
+
+</p>
+                <p class="price">$7.95</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Reset the styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="radio"], input[type="checkbox"] {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.bav{
+    background-color: #f5e6ff;
+}
+.sl{
+    background-color: #ebccff;
+}

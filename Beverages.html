@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: white;
+            color: #4d004d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-style:italic;
+            font-weight:normal;
+            font-family: Ubuntu, sans-serif;
+            font-size: 35px;
+            color:#4d004d;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: auto;  
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height:250px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .menu-item p {
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="grid-container">
+
+<div>
+<center>
+<ul>
+  <li><h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1></li>
+  <hr>
+  <li><address><br>570 Hudson St,<br>New York, NY 10014</address></li><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a href="order.html">ORDER NOW!</a></li>
+  <li><a href="Menu Page.html" class ="active">MENUS</a></li>
+  <li><a href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+<div>
+    <header>
+        <h1>Beverages</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="pics\B11.jpg" alt="Coffee">
+            <div class="menu-item-content">
+                <h2>Coffee</h2>
+                <p>Freshly brewed coffee with a rich aroma.</p>
+                <p class="price">$3.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B1.jpg" alt="Iced Latte">
+            <div class="menu-item-content">
+                <h2>Iced Latte</h2>
+                <p>A refreshing blend of espresso and chilled milk poured over ice, perfect for a sunny day.</p>
+                <p class="price">$2.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B2.jpg" alt="Fresh Lemonade">
+            <div class="menu-item-content">
+                <h2>Fresh Lemonade</h2>
+                <p>Classic homemade lemonade with a tangy citrus twist, served with ice and a hint of mint.
+
+</p>
+                <p class="price">$5.49</p>
+            </div>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="pics\B3.jpg" alt="Strawberry Smoothie">
+            <div class="menu-item-content">
+                <h2>Strawberry Smoothie</h2>
+                <p>A creamy mix of fresh strawberries, yogurt, and honey, blended to perfection.
+
+</p>
+                <p class="price">$5.34</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B4.jpg" alt="Mango Mojito">
+            <div class="menu-item-content">
+                <h2>Mango Mojito</h2>
+                <p>A tropical mocktail featuring fresh mango puree, lime, and mint leaves, topped with soda.
+
+</p>
+                <p class="price">$3.98</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B5.jpg" alt="Espresso Shot">
+            <div class="menu-item-content">
+                <h2>Espresso Shot</h2>
+                <p>A rich, bold shot of premium coffee for a quick and energizing boost.
+
+</p>
+                <p class="price">$6.75</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B6.jpg" alt="Green Tea">
+            <div class="menu-item-content">
+                <h2>Green Tea</h2>
+                <p>Lightly brewed organic green tea with calming flavors and health benefits.
+
+</p>
+                <p class="price">$2.15</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B7.jpg" alt="Berry Blast Mocktail">
+            <div class="menu-item-content">
+                <h2>Berry Blast Mocktail</h2>
+                <p>A vibrant fusion of mixed berries, lemon juice, and soda for a fruity explosion.</p>
+                <p class="price">$4.23</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B8.jpg" alt="Hot Chocolate">
+            <div class="menu-item-content">
+                <h2>Hot Chocolate</h2>
+                <p>A decadent drink made with melted chocolate and steamed milk, topped with whipped cream.
+
+</p>
+                <p class="price">$5.25</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B9.jpg" alt="Sparkling Orange Juice">
+            <div class="menu-item-content">
+                <h2>Sparkling Orange Juice</h2>
+                <p>Freshly squeezed orange juice with a sparkling soda twist for a fizzy delight.
+
+</p>
+                <p class="price">$3.25</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\B10.jpg" alt="Cucumber Mint Cooler">
+            <div class="menu-item-content">
+                <h2>Cucumber Mint Cooler</h2>
+                <p>A revitalizing drink with cucumber juice, mint, lime, and soda, served over ice.
+
+</p>
+                <p class="price">$2.20</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

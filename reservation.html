@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Dining Reservation</title>
+    <link rel="stylesheet" href="resrvation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Fauna+One">
+    <style>
+        h1 {
+            font-style: italic;
+            font-weight: normal;
+            font-family: Ubuntu, sans-serif;
+            font-size: 35px;
+            color: #4d004d;
+            text-align: center;
+        }
+        #responseMessage {
+            color: green;
+            margin-top: 10px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>
+            <center>
+                <ul>
+                    <a href="home.html" style="text-decoration: none;">
+                        <h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1>
+                    </a><hr>
+                    <a href="https://www.google.com/maps/place/570+Hudson+St,+New+York,+NY+10014,+USA" style="text-decoration: none;">
+                        <address>
+                            <br>570 Hudson St,<br>
+                            New York, NY 10014
+                        </address>
+                    </a><br>
+                    <hr>
+                    <li><a class="active" href="reservation.html">RESERVE</a></li>
+                    <li><a href="order.html">ORDER NOW!</a></li>
+                    <li><a href="Menu Page.html">MENUS</a></li>
+                    <li><a href="about.html">OUR STORY</a></li>
+                    <li><a href="locations.html">HOURS & LOCATION</a></li>
+                    <li><a href="newsletter.html">NEWSLETTER</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="Contact page.html">CONTACT</a></li>
+                </ul>
+            </center>
+        </div>
+
+        <div class="container">
+            <div class="carousel" id="carousel">
+                <img src="pic5.jpeg" alt="Delish Dining 1" class="active">
+                <img src="pic3.jpg" alt="Delish Dining 2">
+                <img src="pic6.jpeg" alt="Delish Dining 3">
+            </div>
+            <h1 id="reservationTitle">Reserve Your Table at Delish Dining</h1>
+            <p id="reservationDetails">
+                We accept reservations seven days a week, up to 30 days in advance, via Resy.<br><br>
+                For parties of nine or more, please email <a href="mailto:feasts@antonsnyc.com">feasts@antonsnyc.com</a>.<br><br>
+                Please note, reservations are not available for bar seats. DELISH DINING is a neighborhood restaurant, and we always reserve a number of seats for walk-in guests in our dining room and at our bar. When the restaurant is full, we’re happy to take a name and number and let you know when a table becomes available.
+            </p>
+            <button class="reserve-button" id="openModalButton" style="background-color: #4d004d;">Make a Reservation</button>
+        </div>
+
+        <dialog id="reservationDialog">
+            <button class="close-button" onclick="document.getElementById('reservationDialog').close()">×</button>
+            <div class="container">
+                <div class="form-box">
+                    <h2>Reservation Form</h2>
+                    <form id="reservationForm" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phoneno" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tableno">Table Number</label>
+                            <input type="number" id="tableno" name="tableno" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="members">Number of Members</label>
+                            <input type="number" id="members" name="members" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date for Reservation</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="submit-button" style="background-color: #4d004d;">Submit Reservation</button>
+                    </form>
+                    <p id="responseMessage"></p>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel img');
+            
+            function changeImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+            setInterval(changeImage, 3000);
+
+            document.getElementById("openModalButton").onclick = function() {
+                document.getElementById('reservationDialog').showModal();
+            };
+
+            document.getElementById('reservationForm').onsubmit = function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(this);
+                fetch('reservation.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const responseMessageElement = document.getElementById('responseMessage');
+                    responseMessageElement.style.display = 'block';  
+                    responseMessageElement.style.color = data.success ? 'green' : 'red';  
+                    responseMessageElement.innerText = data.message;
+
+                    setTimeout(function() {
+                        document.getElementById('reservationForm').reset();
+                        responseMessageElement.style.display = 'none';
+                    }, 4000); // Clear form and message after 4 seconds
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+
+                    const responseMessageElement = document.getElementById('responseMessage');
+                    responseMessageElement.style.display = 'block';  
+                    responseMessageElement.style.color = 'red';  
+                    responseMessageElement.innerText = 'An error occurred. Please try again later.';
+                    
+                    setTimeout(function() {
+                        document.getElementById('reservationForm').reset();
+                        responseMessageElement.style.display = 'none';
+                    }, 4000); // Clear form and message after 4 seconds
+                });
+            };
+        </script>
+    </div>
+</body>
+</html>

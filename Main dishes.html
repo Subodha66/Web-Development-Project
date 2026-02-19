@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: white;
+            color: #4d004d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-style:italic;
+            font-weight:normal;
+            font-family: Ubuntu, sans-serif;
+            font-size: 35px;
+            color:#4d004d;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: auto;  
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height:250px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .menu-item p {
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="grid-container">
+
+<div>
+<center>
+<ul>
+  <li><h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1></li>
+  <hr>
+  <li><address><br>570 Hudson St,<br>New York, NY 10014</address></li><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a href="order.html">ORDER NOW!</a></li>
+  <li><a href="Menu Page.html" class ="active" >MENUS</a></li>
+  <li><a href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+<div>
+    <header>
+        <h1>Main Dishes</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="pics\MD1.jpg" alt="Grilled Chicken Breast">
+            <div class="menu-item-content">
+                <h2>Grilled Chicken Breast</h2>
+                <p>Juicy and tender chicken breast, marinated in herbs and spices, served with saut�ed vegetables.
+
+</p>
+                <p class="price">$33.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD2.jpg" alt="Beef Steak">
+            <div class="menu-item-content">
+                <h2>Beef Steak</h2>
+                <p>A perfectly grilled steak, seasoned to perfection, served with mashed potatoes and gravy.</p>
+                <p class="price">$42.19</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD3.jpg" alt="Vegetable Fried Rice">
+            <div class="menu-item-content">
+                <h2>Vegetable Fried Rice</h2>
+                <p>Fragrant fried rice tossed with a colorful mix of fresh vegetables and soy sauce.
+
+</p>
+                <p class="price">$25.65</p>
+            </div>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="pics\MD4.jpg" alt="Chicken Pad Thai">
+            <div class="menu-item-content">
+                <h2>Chicken Pad Thai</h2>
+                <p>Classic Thai stir-fried noodles with chicken, eggs, peanuts, and a tangy tamarind sauce.</p>
+                <p class="price">$38.75</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD5.jpg" alt="Seafood Noodles">
+            <div class="menu-item-content">
+                <h2>Seafood Noodles</h2>
+                <p>A hearty bowl of stir-fried noodles loaded with shrimp, squid, and fish, flavored with garlic and chili.</p>
+                <p class="price">$50.25</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD6.jpg" alt="Spaghetti Bolognese">
+            <div class="menu-item-content">
+                <h2>Spaghetti Bolognese</h2>
+                <p>Classic Italian pasta tossed in a rich and hearty meat sauce, topped with parmesan cheese.
+
+</p>
+                <p class="price">$35.85</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD11.jpg" alt="Grilled Veggie Skewers">
+            <div class="menu-item-content">
+                <h2>Grilled Veggie Skewers</h2>
+                <p>A colorful assortment of marinated vegetables grilled to perfection, served with a tangy yogurt dip.
+
+
+
+
+
+
+</p>
+                <p class="price">$20.50</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD8.jpg" alt="Vegetable Stir-Fry with Rice Noodles">
+            <div class="menu-item-content">
+                <h2>Vegetable Stir-Fry with Rice Noodles</h2>
+                <p>A medley of fresh vegetables tossed with rice noodles in a savory soy and sesame sauce.</p>
+                <p class="price">$30.65</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD9.jpg" alt="Egg Fried Rice">
+            <div class="menu-item-content">
+                <h2>Egg Fried Rice</h2>
+                <p>Fluffy rice stir-fried with scrambled eggs, spring onions, and a hint of garlic, perfect as a standalone dish or a side.</p>
+                <p class="price">$40.85</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\MD10.jpg" alt="Shrimp Alfredo Pasta">
+            <div class="menu-item-content">
+                <h2>Shrimp Alfredo Pasta</h2>
+                <p>Creamy Alfredo pasta tossed with succulent shrimp and garnished with parsley.</p>
+                <p class="price">$48.99</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

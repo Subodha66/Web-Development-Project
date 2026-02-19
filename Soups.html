@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: white;
+            color: #4d004d;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-style:italic;
+            font-weight:normal;
+            font-family: Ubuntu, sans-serif;
+            font-size: 35px;
+            color:#4d004d;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: auto;  
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height:250px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .menu-item p {
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="grid-container">
+
+<div>
+<center>
+<ul>
+  <li><h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1></li>
+  <hr>
+  <li><address><br>570 Hudson St,<br>New York, NY 10014</address></li><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a href="order.html">ORDER NOW!</a></li>
+  <li><a href="Menu Page.html" class ="active" >MENUS</a></li>
+  <li><a href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+<div>
+    <header>
+        <h1>Soups</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="pics\SP1.jpg" alt="Tomato Basil Soup">
+            <div class="menu-item-content">
+                <h2>Tomato Basil Soup</h2>
+                <p>A creamy blend of ripe tomatoes and fresh basil, served with a drizzle of olive oil.</p>
+                <p class="price">$13.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP2.jpg" alt="Chicken Noodle Soup">
+            <div class="menu-item-content">
+                <h2>Chicken Noodle Soup</h2>
+                <p>A comforting classic with tender chicken, noodles, and vegetables in a savory broth.</p>
+                <p class="price">$22.19</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP3.jpg" alt="Minestrone Soup">
+            <div class="menu-item-content">
+                <h2>Minestrone Soup</h2>
+                <p>A hearty Italian soup loaded with vegetables, beans, and pasta in a flavorful tomato base.</p>
+                <p class="price">$35.15</p>
+            </div>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="pics\SP4.jpg" alt="Cream of Mushroom Soup">
+            <div class="menu-item-content">
+                <h2>Cream of Mushroom Soup</h2>
+                <p>A rich and creamy soup made with fresh mushrooms, garlic, and a touch of thyme.</p>
+                <p class="price">$16.78</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP5.jpg" alt="French Onion Soup">
+            <div class="menu-item-content">
+                <h2>French Onion Soup</h2>
+                <p>Sweet caramelized onions in a savory beef broth, topped with melted cheese and croutons.
+
+
+
+</p>
+                <p class="price">$10.34</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP6.jpg" alt="Pumpkin Soup">
+            <div class="menu-item-content">
+                <h2>Pumpkin Soup</h2>
+                <p>Silky smooth pumpkin soup with a hint of nutmeg, served with crusty bread.
+
+</p>
+                <p class="price">$8.95</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP7.jpg" alt="Seafood Chowder">
+            <div class="menu-item-content">
+                <h2>Seafood Chowder</h2>
+                <p>A creamy, hearty soup with shrimp, clams, fish, and potatoes, perfect for seafood lovers.
+
+</p>
+                <p class="price">$30.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP8.jpg" alt="Spicy Thai Coconut Soup (Tom Kha)">
+            <div class="menu-item-content">
+                <h2>Spicy Thai Coconut Soup (Tom Kha)</h2>
+                <p>A fragrant and tangy soup with chicken, mushrooms, and coconut milk, infused with lemongrass.</p>
+                <p class="price">$20.15</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP9.jpg" alt="Lentil Soup">
+            <div class="menu-item-content">
+                <h2>Lentil Soup</h2>
+                <p>A nutritious and hearty soup made with red lentils, vegetables, and warming spices.</p>
+                <p class="price">$14.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pics\SP10.jpg" alt="Sweet Corn Soup">
+            <div class="menu-item-content">
+                <h2>Sweet Corn Soup</h2>
+                <p>A light and creamy soup with sweet corn kernels and a hint of ginger for a comforting touch.
+
+</p>
+                <p class="price">$10.99</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

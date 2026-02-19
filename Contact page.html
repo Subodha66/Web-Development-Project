@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Fauna+One" >
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+        
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .btn {
+ 
+  background-color:#d499ff;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color:#f4e6ff; ;
+}
+	.header-image {
+            width: 1250px;
+            height: 700px;
+        }
+	
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+<div>
+<center>
+<ul>
+  <li><h1 style="font-size:45px;font-family:Castellar;">DELISH DINING</h1></li>
+  <hr>
+  <li><address><br>570 Hudson St,<br>New York, NY 10014</address></li><br>
+  <hr>
+  <li><a href="reservation.html">RESERVE</a></li>
+  <li><a href="order.html">ORDER NOW!</a></li>
+  <li><a href="Menu Page.html">MENUS</a></li>
+  <li><a href="about.html">OUR STORY</a></li>
+  <li><a href="locations.html">HOURS & LOCATION</a></li>
+  <li><a href="newsletter.html">NEWSLETTER</a></li>
+  <li><a href="community.html">COMMUNITY</a></li>
+  <li><a class="active" href="Contact page.html">CONTACT</a></li>
+</ul>
+</center>
+</div>
+
+<div>
+<center><img src="pics\pic 40.jpg" alt="Delish-Dining Restaurant" class="header-image"></center>
+
+    <h1>Contact</h1>
+<div style="padding:0px 150px;">
+    <p>Delish-Dining is a relaxed neighborhood cafe and wine bar in the heart of the West Village. We're open seven days a week until late, and we serve our full menu in the dining room and bar. We appreciate your inquiry, and someone from our team will respond shortly.</p>
+
+    <p>370 Hudson Street New York, NY 10014</p>
+
+    <p>General Inquiries: <a href="mailto:info@delishsnyc.com">info@delishsnyc.com</a></p>
+    <p>Join Our Team: <a href="mailto:teams@delishsnyc.com">teams@delishsnyc.com</a></p>
+    <p>Media Inquiries: <a href="mailto:press@delishsnyc.com">press@delishsnyc.com</a></p>
+</div>
+<div style="padding:0px 250px;">
+    <table width="100%">
+    <form name="myForm" onsubmit="return validateForm()">
+        <tr>
+	<td><label for="name"><p>Name</p></label></td>
+        <td><input type="text" id="name" name="name" size="50" required></td>
+	</tr>
+
+	<tr>
+        <td><label for="email"><p>Email</p></label></td>
+        <td><input type="email" id="mail" name="mail" required></td>
+        </tr>
+
+	<tr>
+        <td><label for="phone"><p>Phone Number</p></label></td>
+        <td><input type="text" id="phone" name="phone" placeholder="123-45-67-1"><br></td>
+        </tr><br>
+
+ 	<tr>
+	<td><label for="reason"><p>What are you getting in touch about?</p></label></td>
+        <td><select id="reason" name="reason">
+            <option value="">--Select--</option>
+            <option value="reservation">Reservation</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select></td>
+	</tr>
+
+	<tr>        
+	<td><label for="message"><p>Your Message</p></label></td>
+	<td><textarea id="message" name="msg" rows="5" required></textarea></td>
+	</tr>
+ 	<tr><td><input type="submit" value="SEND" class="btn"></td></tr>
+    </form>
+    </table>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
